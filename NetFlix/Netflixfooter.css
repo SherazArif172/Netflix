@@ -1,0 +1,96 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu,
+    sans-serif;
+}
+
+.last-main {
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  padding: 50px 0px 60px 0px;
+}
+
+.question {
+  padding: 0px 0px 24px 27px;
+}
+
+.last-main a {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 14px;
+}
+
+.ul-main {
+  display: flex;
+  width: 100%;
+  padding-left: 27px;
+}
+
+.ul-main ul {
+  list-style-type: none;
+}
+
+.ul-main ul li {
+  padding-bottom: 10px;
+}
+
+.siblings1-2,
+.siblings3-4 {
+  display: flex;
+  width: 100%;
+}
+
+.ul-sibling-1 {
+  width: 100%;
+
+}
+.ul-sibling-2 {
+  
+  width: 100%;
+}
+.ul-sibling-3 {
+  width: 100%;
+}
+.ul-sibling-4 {
+  width: 100%;
+}
+
+.select-button {
+  margin: 25px 0px 0px 25px;
+}
+
+.select-button select {
+  width: 110px;
+  height: 29px;
+  padding-left: 15px;
+  line-height: 1.25rem;
+  background-color: black;
+  font-size: 1rem;
+  font-weight: 400;
+  color: rgb(255, 255, 255);
+  border-radius: 4px;
+}
+
+.select-button select option {
+  font-weight: inherit;
+  text-wrap: nowrap;
+  min-height: 1.25em;
+  padding: inherit;
+}
+
+.pakistan {
+  font-size: 0.875rem;
+    margin-top: 1.5rem;
+    margin-left: 1.5rem;
+   color: rgba(255,255,255,0.7);
+}
+
+
+@media screen and (max-width:925px)  {
+  .siblings1-2,
+.siblings3-4 {
+  flex-direction: column;
+}
+}

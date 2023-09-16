@@ -1,0 +1,259 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu,
+    sans-serif;
+}
+
+ header {
+    width: 100%;
+    height: 100%;
+}
+
+
+.header-main {
+  height: 100%;
+  background-image: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 1) 0px,
+    rgba(0, 0, 0, 0) 60%,
+    rgba(0, 0, 0, 1) 100%
+  ),
+  url(./images/background\ image.jpg);
+  background-size: cover;
+background-position: center;
+border-bottom: 7px solid rgb(35,35,35);
+}
+
+.header-netflix {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 22px;
+}
+
+.logo {
+  padding-left: 30px;
+}
+
+.logo img {
+  width: 140px;
+  height: auto;
+}
+
+.header-button {
+  padding-right: 30px;
+}
+
+.header-button button {
+  width: 72px;
+  height: 26px;
+  background-color: #e50914;
+  font-size: 12px;
+  font-weight: 500;
+  color: white;
+  padding: 4px 13px 4px 13px;
+  border-radius: 5px;
+  min-height: 32px;
+  border: #e50914;
+  cursor: pointer;
+}
+
+.header-button button:hover {
+  background-color: #ae1219;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.header-part2 {
+  width: 100%;
+  height: 100%;
+  padding:190px 0px 135px 0px;
+}
+
+.header-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-text h1 {
+  font-size: 3rem;
+  font-weight: 900;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  padding-bottom: 12px;
+}
+
+.header-text p {
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: white;
+  text-align: center;
+  padding-bottom: 8px;
+}
+
+.header-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-text h3 {
+  margin: 0;
+  font-size: 1.125rem;
+  font-weight: 450;
+  line-height: 4rem;
+  color: white;
+  text-align: center;
+}
+
+.form-input-button {
+  display: flex;
+}
+
+.email-input {
+  position: relative;
+  border: 1.5px solid rgb(55, 55, 55);
+  border-radius: 4px;
+  width: 62%;
+  margin-left: 5px;
+}
+
+.email-input input {
+  height: 100%;
+  width: 100%;
+  color: transparent;
+  padding: 1rem 1rem 1rem;
+  border: 0 solid transparent;
+  background-color: rgb(0, 0, 1);
+  opacity: 0.6;
+  cursor: text;
+  font-size: 15px;
+  line-height: 24px;
+  border:white;
+  text-align: left;
+  border-radius: 4px;
+  color: rgb(255, 255, 255);
+}
+
+.email-input label {
+  color: rgba(255, 255, 255, 0.7);
+  position: absolute;
+  top: 15px;
+  left: 14px;
+  transition: all 0.3s ease-in-out;
+  pointer-events: none;
+}
+
+.email-input input:focus + label,
+.email-input input:valid + label {
+  font-size: 12px;
+  top: 5px;
+  left: 14px;
+}
+
+.input-button {
+  padding-left: 10px;
+  position: relative;
+}
+
+
+.input-button button {
+  box-sizing: border-box;
+  font-size: 24px;
+  font-weight: 400;
+  background-color: #c11119;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  height: 54px;
+  width: 190px;
+  cursor: pointer;
+  padding: 9px 24px 12px 0px;
+}
+
+.input-button button:hover {
+  background-color: #ae1219;
+  transition: background-color 0.2s ease-in-out;
+}
+
+#icon-che {
+  color: white;
+  font-size: 19px;
+  font-weight: 400;
+  position: absolute;
+  right: 23px;
+  bottom: 17px;
+}
+
+
+@media screen and (max-width:925px) {
+  .header-text h1 {
+    font-size: 2rem;
+  }
+
+  .header-text p {
+    font-size: 1.1rem;
+  }
+
+  .form-text h3 {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width:615px) {
+
+  .header-text h1 {
+    font-size: 2rem;
+    font-weight: 700;
+  }
+
+  .header-text p {
+    font-size: 0rem;
+  }
+
+.email-input {
+  width: 80%;
+  align-self: center;
+}
+
+  .email-input input{
+    width: 100%;
+  }
+
+  .input-button {
+    align-self: center;
+    padding-top: 10px;
+  }
+
+  .form-input-button {
+    flex-direction: column;
+  }
+
+  .input-button button {
+    width: 162px;
+    height: 51px;
+    font-size: 20px;
+    padding: 9px 24px 12px 0p
+  }
+}
+
+@media screen and (max-width: 460px) {
+  .header-part2 {
+    padding: 171px 0px 80px 0px;
+  }
+}
+
+@media screen and (max-width: 318px) {
+  .logo img {
+    width: 110px;
+    height: auto;
+  }
+
+  .header-button button {
+    width: 64px;
+  }
+}
+
